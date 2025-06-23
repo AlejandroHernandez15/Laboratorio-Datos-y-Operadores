@@ -1,52 +1,84 @@
 interface Grupomusical {
-  Nombredelgrupo: String;
-  Añodefundacion: Number;
-  Activo: Boolean;
-  Generomusical: String;
+  Nombredelgrupo: string;
+  Fundacion: number;
+  Activo: boolean;
+  Generomusical: string;
 }
 
-const poprock = "Pop rock";
-const rock = "Rock";
-const hardrock = "Hard rock";
-const clasica = "Clásica";
+/*
+emoticonos
+🎸Rock  
+🎵Pop Rock
+🤘Hard Rock
+🎼Clásica
+*/
+const Nombredelgrupo =
+  "color: black; font-size: 16px; background-color: green;";
+
+const poprock = "🎵 Pop Rock";
+const rock = "🎸 Rock ";
+const hardrock = "🤘 Hard Rock";
+const clasica = "🎼 Clásica";
 
 //const de grupos
 
 const grupo1: Grupomusical = {
   Nombredelgrupo: "The Beatles",
-  Añodefundacion: 1960,
+  Fundacion: 1960,
   Activo: true,
-  Generomusical: "Pop Rock",
+  Generomusical: `${poprock}`,
 };
+
 const grupo2: Grupomusical = {
   Nombredelgrupo: "Queen",
-  Añodefundacion: 1970,
+  Fundacion: 1970,
   Activo: false,
-  Generomusical: "Rock",
+  Generomusical: `${rock}`,
 };
 const grupo3: Grupomusical = {
   Nombredelgrupo: "AC DC",
-  Añodefundacion: 1973,
+  Fundacion: 1973,
   Activo: true,
-  Generomusical: "Pop Rock",
+  Generomusical: `${poprock}`,
 };
 
 const grupo4: Grupomusical = {
   Nombredelgrupo: "The Ludwig van Beethoven",
-  Añodefundacion: 1770,
+  Fundacion: 1770,
   Activo: false,
-  Generomusical: "Clásica",
+  Generomusical: `${clasica}`,
 };
 
 const grupo5: Grupomusical = {
   Nombredelgrupo: "The Rolling Stones",
-  Añodefundacion: 1962,
+  Fundacion: 1962,
   Activo: true,
-  Generomusical: "Rock",
+  Generomusical: `${rock}`,
 };
 
+console.log(
+  "%cThe Beatles",
+  "color: black; font-weight: bold; font-size: 26px; background-color: green"
+);
+
 console.log(grupo1);
+console.log(
+  "%cQueen",
+  "color: black; background-color: green;  font-weight: bold; font-size:26px;"
+);
 console.log(grupo2);
+console.log(
+  "%cAC DC",
+  "color: black; font-weight: bold; background-color: green; font-size:26px"
+);
 console.log(grupo3);
+console.log(
+  "%cThe Ludwig van Beethoven",
+  "color: black; background-color:green; font-weight: bold; font-size:26px"
+);
 console.log(grupo4);
+console.log(
+  "%cThe Rolling Stones",
+  " color:black; font-weight: bold; background-color: green; font-size: 26px;"
+);
 console.log(grupo5);
